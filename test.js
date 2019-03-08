@@ -1,15 +1,15 @@
 
 function arenderjs_init(arenderjs_)
 {
-	
+    arenderjs_.loadDocument("http:192.168.0.175/sample.pdf");
     window.alert("arenderjs_") 
-    window.alert(arenderjs_) 
+    window.alert(JSON.stringifiy(arenderjs_)); 
     // we register on current document change
     arenderjs_.registerCurrentDocumentChangeEvent(function(id, title, metadata) 
     {
         armt_onCurrentDocumentChangeEvent(arenderjs_,id, title, metadata);
     });
-}
+}	
 
 function armt_onCurrentDocumentChangeEvent(arenderjs_, id, title, metadata)
 {
