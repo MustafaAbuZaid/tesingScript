@@ -5,7 +5,8 @@ function arenderjs_init(arenderjs_)
      if(typeof arenderjs_ === 'object') { 
       console.log("arenderjs_ --> ",arenderjs_);   
       console.log("getARenderJS() --> ",getARenderJS()); 
-      arenderjs_.getZoomJSAPI();
+      console.log(arenderjs_.getZoomJSAPI());
+      arenderjs_.askZoomFullWidth();
      } 
      
      getARenderJS().loadDocument("http://www.africau.edu/images/default/sample.pdf",
