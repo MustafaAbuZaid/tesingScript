@@ -4,7 +4,7 @@ function arenderjs_init(arenderjs_)
      // Loads the PDF reference document
      if(typeof arenderjs_ === 'object') { 
       console.log("getARenderJS() --> ",getARenderJS()); 
-      getARenderJS().getRotateJSAPI().askRotateCurrentPageRight();
+      getARenderJS().getRotateJSAPI().askRotateAllPageRight();
 
      } 
      
