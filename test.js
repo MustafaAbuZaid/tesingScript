@@ -3,7 +3,8 @@ function arenderjs_init(arenderjs_)
 {
      // Loads the PDF reference document
      if(typeof arenderjs_ === 'object') { 
-      console.log(arenderjs_);   
+      console.log("arenderjs_ --> ",arenderjs_);   
+      console.log("getARenderJS() --> ",getARenderJS());   
      } 
      getARenderJS().loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
