@@ -5,11 +5,11 @@ function arenderjs_init(arenderjs_)
      if(typeof arenderjs_ === 'object') { 
       console.log(arenderjs_);   
      } 
-     arenderjs_.loadDocument("http://www.africau.edu/images/default/sample.pdf",
+     arenderjs_.getARenderJS().loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
           {
              console.log(id);
-             arenderjs_.openDocument(id);
+             arenderjs_.getARenderJS().openDocument(id);
           }); 
     
     // we register on current document change
@@ -23,9 +23,7 @@ function armt_onCurrentDocumentChangeEvent(arenderjs_, id, title, metadata)
 {
     var target="ARender samples111";
     arenderjs_.getPageForNamedDestination(id,target, function(pageNumber) 
-    {
-
-        window.alert(arenderjs_) 
+    { 
         if (pageNumber==-1) 
         {
             window.alert("Could not find target named \""+ target + "\" are you sure this document contains it?");
