@@ -3,12 +3,13 @@ function arenderjs_init(arenderjs_)
 {
      // Loads the PDF reference document
      if(typeof arenderjs_ === 'object') { 
-      window.alert("object");   
+      console.log(arenderjs_);   
+      console.log(JSON.stringify(arenderjs_));   
      } 
-     arenderjs_.loadDocument("http:192.168.0.175/sample.pdf",
+     arenderjs_.loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
           {
-             window.alert(id);
+             console.log(id);
              arenderjs_.openDocument(id);
           }); 
     
