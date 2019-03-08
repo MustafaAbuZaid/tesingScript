@@ -1,7 +1,7 @@
 
 function arenderjs_init(arenderjs_)
 {
-     getARenderJS().loadDocument("http://arender.arondor.com/pdf/pdf/PDFReference15_v5.pdf");
+  console.log(getARenderJS().loadDocument("http://arender.arondor.com/pdf/pdf/PDFReference15_v5.pdf"));
 //                                  ,
 //      function(id)
 //      {
