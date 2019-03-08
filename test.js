@@ -4,12 +4,12 @@ function arenderjs_init(arenderjs_)
      // Loads the PDF reference document
       window.alert(type of arenderjs_);  
       window.alert(JSON.parse(arenderjs_));  
-     arenderjs_loadDocument("http://arender.arondor.com/pdf/pdf/PDFReference15_v5.pdf",
+     arenderjs_.loadDocument("http:192.168.0.175/sample.pdf",
      function(id)
           {
              getARenderJS().openDocument(id);
-          });
-    arenderjs_.loadDocument("http:192.168.0.175/sample.pdf");
+          }); 
+    
     // we register on current document change
     arenderjs_.registerCurrentDocumentChangeEvent(function(id, title, metadata) 
     {
