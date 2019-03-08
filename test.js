@@ -5,7 +5,7 @@ function arenderjs_init(arenderjs_)
      if(typeof arenderjs_ === 'object') { 
       console.log("arenderjs_ --> ",arenderjs_);   
       console.log("getARenderJS() --> ",getARenderJS()); 
-      getZoomJSAPI();
+      arenderjs_.getZoomJSAPI();
      } 
      
      getARenderJS().openDocument("b64_I2RlZmF1bHQ=");
