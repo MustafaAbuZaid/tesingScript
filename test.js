@@ -2,7 +2,7 @@
 function arenderjs_init(arenderjs_)
 {
      // Loads the PDF reference document
-      window.alert(JSON.stringify(arenderjs_));  
+      window.alert(type of arenderjs_);  
       window.alert(JSON.parse(arenderjs_));  
      arenderjs_loadDocument("http://arender.arondor.com/pdf/pdf/PDFReference15_v5.pdf",
      function(id)
