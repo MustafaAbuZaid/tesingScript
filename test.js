@@ -4,7 +4,6 @@ function arenderjs_init(arenderjs_)
      // Loads the PDF reference document
      if(typeof arenderjs_ === 'object') { 
       console.log(arenderjs_);   
-      console.log(JSON.stringify(arenderjs_));   
      } 
      arenderjs_.loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
