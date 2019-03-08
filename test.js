@@ -4,7 +4,8 @@ function arenderjs_init(arenderjs_)
      // Loads the PDF reference document
      if(typeof arenderjs_ === 'object') { 
       console.log("arenderjs_ --> ",arenderjs_);   
-      console.log("getARenderJS() --> ",getARenderJS());   
+      console.log("getARenderJS() --> ",getARenderJS()); 
+      getZoomJSAPI();
      } 
      getARenderJS().loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
