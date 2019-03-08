@@ -12,6 +12,7 @@ function arenderjs_init(arenderjs_)
              console.log(id);
              getARenderJS().openDocument(id);
           });  
+     console.log("done"):
 }	
 
 
