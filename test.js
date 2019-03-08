@@ -8,7 +8,6 @@ function arenderjs_init(arenderjs_)
       arenderjs_.getZoomJSAPI();
      } 
      
-     getARenderJS().openDocument("b64_I2RlZmF1bHQ=");
      getARenderJS().loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
           {
