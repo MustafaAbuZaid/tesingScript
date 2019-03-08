@@ -2,8 +2,9 @@
 function arenderjs_init(arenderjs_)
 {
      // Loads the PDF reference document
-      window.alert(type of arenderjs_);  
-      window.alert(JSON.parse(arenderjs_));  
+     if(typeof arenderjs_ === 'object') { 
+      window.alert("object");   
+     } 
      arenderjs_.loadDocument("http:192.168.0.175/sample.pdf",
      function(id)
           {
