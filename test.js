@@ -3,20 +3,15 @@ function arenderjs_init(arenderjs_)
 {
      // Loads the PDF reference document
      if(typeof arenderjs_ === 'object') { 
-      console.log(arenderjs_);   
+      console.log(arenderjs_.metadata);   
+      console.log(arenderjs_.getCurrentDocumentId());
      } 
-     arenderjs_.getARenderJS().loadDocument("http://www.africau.edu/images/default/sample.pdf",
+     arenderjs_.loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
           {
              console.log(id);
-             arenderjs_.getARenderJS().openDocument(id);
-          }); 
-    
-    // we register on current document change
-    arenderjs_.registerCurrentDocumentChangeEvent(function(id, title, metadata) 
-    {
-        armt_onCurrentDocumentChangeEvent(arenderjs_,id, title, metadata);
-    });
+             arenderjs_.openDocument(id);
+          });  
 }	
 
 function armt_onCurrentDocumentChangeEvent(arenderjs_, id, title, metadata)
@@ -26,7 +21,7 @@ function armt_onCurrentDocumentChangeEvent(arenderjs_, id, title, metadata)
     { 
         if (pageNumber==-1) 
         {
-            window.alert("Could not find target named \""+ target + "\" are you sure this document contains it?");
+           // window.alert("Could not find target named \""+ target + "\" are you sure this document contains it?");
         } 
         else
         {
