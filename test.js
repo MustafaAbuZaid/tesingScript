@@ -5,11 +5,11 @@ function arenderjs_init(arenderjs_)
      if(typeof arenderjs_ === 'object') { 
       console.log(arenderjs_);   
      } 
-     arenderjs_.loadDocument("http://www.africau.edu/images/default/sample.pdf",
+     getARenderJS().loadDocument("http://www.africau.edu/images/default/sample.pdf",
      function(id)
           {
              console.log(id);
-             arenderjs_.openDocument(id);
+             getARenderJS().openDocument(id);
           });  
 }	
 
