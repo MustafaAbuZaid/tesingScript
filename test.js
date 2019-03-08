@@ -8,7 +8,8 @@ function arenderjs_init(arenderjs_)
      arenderjs_.loadDocument("http:192.168.0.175/sample.pdf",
      function(id)
           {
-             getARenderJS().openDocument(id);
+             window.alert(id);
+             arenderjs_.openDocument(id);
           }); 
     
     // we register on current document change
