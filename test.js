@@ -6,11 +6,11 @@ function arenderjs_init(arenderjs_)
        arenderjs_.loadDocument("http://arender.arondor.com/pdf/pdf/PDFReference15_v5.pdf",
      function(id)
      {
-          getARenderJS().openDocument(id);
+          arenderjs_.openDocument(id);
      });
      // Loads the PDF reference document
 //      if(typeof arenderjs_ === 'object') { 
-      console.log("getARenderJS() --> ",getARenderJS());  
+      console.log("getARenderJS() --> ",arenderjs_);  
 //      }   
      });
 
