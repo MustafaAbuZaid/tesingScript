@@ -7,10 +7,8 @@ function arenderjs_init(arenderjs_)
      function(id)
      {
           arenderjs_.openDocument(id);
-     });
-          console.log(arenderjs_.g);
-          console.log(arenderjs_.g.c);
-          console.log(arenderjs_.g.c.c);
+     }); 
+          console.log("id: ",arenderjs_.g.c.c);
      // Loads the PDF reference document
 //      if(typeof arenderjs_ === 'object') { 
       console.log("getARenderJS() --> ",arenderjs_);  
