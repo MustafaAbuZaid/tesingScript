@@ -13,7 +13,7 @@ function arenderjs_init(arenderjs_)
 //      if(typeof arenderjs_ === 'object') { 
 //       console.log("getARenderJS() --> ",getARenderJS());  
 //      }   
-//      });
+     });
 
 
 }	
