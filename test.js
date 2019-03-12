@@ -9,7 +9,7 @@ function armt_onSubmitAlterDocumentContentEvent(arenderjs_,obj)
 { 
   
     console.log("Notify : " + obj);
-    console.log("Notify : " + arenderjs_);
+    console.log("Notify : " + arenderjs_.documentId);
 } 
 
 
