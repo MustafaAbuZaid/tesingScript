@@ -5,7 +5,7 @@ function arenderjs_init(arenderjs_)
 {
      arenderjs_.documentBuilder.registerSubmitAlterDocumentContentEvent(function(obj){armt_onSubmitAlterDocumentContentEvent(arenderjs_,obj);});
     arenderjs_.documentBuilder.registerNotifyAlterDocumentContentEvent(function(obj){armt_onNotifyAlterDocumentContentEvent(arenderjs_,obj);});
-
+console.log(arenderjs_);
 //      getARenderJS().registerAllAsyncModulesStartedEvent(function() {
          // getARenderJS().openDocument("b64_dXJsPWh0dHA6Ly93d3cuYWZyaWNhdS5lZHUvaW1hZ2VzL2RlZmF1bHQvc2FtcGxlLnBkZg");
 //        arenderjs_.loadDocument("http://192.168.0.175/QWE.PNG",
