@@ -6,10 +6,12 @@ function arenderjs_init(arenderjs_)
 
 }	
 function armt_onSubmitAlterDocumentContentEvent(arenderjs_,obj)
-{ 
-  
-    console.log("Notify : " + obj);
-    console.log("Notify : " + arenderjs_.documentId);
+{  
+     console.log("Notify : " + obj);
+     console.log(arenderjs_);
+     console.log(arenderjs_.g.c);
+     arenderjs_.loadDocument(arenderjs_.g.c);
+     arenderjs_.getDownloadDocumentJSAPI().askDownloadDocumentPDF();
 } 
 
 
