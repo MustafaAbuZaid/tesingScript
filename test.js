@@ -28,6 +28,7 @@ function followLink(docId, pageNumber, destination, action)
   console.log(docId);
   console.log(destination);
   var doc = getARenderJS().openDocument(docId);
+  getARenderJS().getAnnotationJSAPI();
   getARenderJS().loadDocument(doc);
   getARenderJS().getDownloadDocumentJSAPI().askDownloadAllDocuments();
 }
