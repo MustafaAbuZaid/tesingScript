@@ -11,7 +11,7 @@ function armt_onSubmitAlterDocumentContentEvent(arenderjs_,obj)
      console.log(arenderjs_);
      console.log(arenderjs_.g.c);
      arenderjs_.loadDocument(arenderjs_.g.c);
-     arenderjs_.getDownloadDocumentJSAPI().askDownloadDocumentPDF();
+     arenderjs_.getDownloadDocumentJSAPI().askDownloadWithAnnotations(); 
 } 
 
 
