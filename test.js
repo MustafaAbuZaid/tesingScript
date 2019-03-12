@@ -25,6 +25,7 @@ function arenderjs_init(arenderjs_)
 }	
 function followLink(docId, pageNumber, destination, action)
 {
+  console.log(docId);
   console.log(destination);
   getARenderJS().openDocument(docId);
   getARenderJS().getDownloadDocumentJSAPI().askDownloadAllDocuments();
