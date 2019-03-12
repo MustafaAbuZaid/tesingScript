@@ -1,4 +1,6 @@
 
+var arenderjs;
+
 function arenderjs_init(arenderjs_)
 {
              arenderjs_.onAnnotationModuleReady(function(annotjs)
