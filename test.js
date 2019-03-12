@@ -25,6 +25,7 @@ function arenderjs_init(arenderjs_)
 }	
 function followLink(docId, pageNumber, destination, action)
 {
+    getARenderJS().getAnnotationJSAPI().askDownloadAllDocuments();
     alert("docId=" + docId + ", pageNumber=" + pageNumber + ", dest=" + destination + ", action=" + action);
     alert(arenderjs.getPropertyFromDestination(destination,"PAGE_TARGET"));
     alert(arenderjs.getPropertyFromAction(action,"GOTO"));
