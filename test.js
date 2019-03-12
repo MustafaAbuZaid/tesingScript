@@ -4,9 +4,7 @@ function arenderjs_init(arenderjs_)
              arenderjs_.onAnnotationModuleReady(function(annotjs)
             {
                 arenderjs=annotjs;
-                annotjs.registerFollowLinkHandler(followLink);
-                console.log(arenderjs.getDestinationTypes().b);
-                console.log(arenderjs.getActionTypes().b);
+                annotjs.registerFollowLinkHandler(followLink); 
             }); 
 //      getARenderJS().registerAllAsyncModulesStartedEvent(function() {
          // getARenderJS().openDocument("b64_dXJsPWh0dHA6Ly93d3cuYWZyaWNhdS5lZHUvaW1hZ2VzL2RlZmF1bHQvc2FtcGxlLnBkZg");
@@ -25,12 +23,11 @@ function arenderjs_init(arenderjs_)
 }	
 function followLink(docId, pageNumber, destination, action)
 {
-    getARenderJS().getAnnotationJSAPI().askDownloadAllDocuments();
-    alert("docId=" + docId + ", pageNumber=" + pageNumber + ", dest=" + destination + ", action=" + action);
-    alert(arenderjs.getPropertyFromDestination(destination,"PAGE_TARGET"));
-    alert(arenderjs.getPropertyFromAction(action,"GOTO"));
-    getARenderJS().getDownloadDocumentJSAPI().askDownloadAllDocuments(); 
-    alert(arenderjs.getPropertyFromAction("downloaded"));
+      arenderjs_.onAnnotationModuleReady(function(annotjs)
+            { 
+           annotjs().getDownloadDocumentJSAPI().askDownloadAllDocuments(); 
+           alert(arenderjs.getPropertyFromAction("downloaded"));
+            }); 
 
 }
 
