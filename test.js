@@ -23,12 +23,7 @@ function arenderjs_init(arenderjs_)
 }	
 function followLink(docId, pageNumber, destination, action)
 {
-      arenderjs_.onAnnotationModuleReady(function(annotjs)
-            { 
-           annotjs().getDownloadDocumentJSAPI().askDownloadAllDocuments(); 
-           alert(arenderjs.getPropertyFromAction("downloaded"));
-            }); 
-
+     getARenderJS().getDownloadDocumentJSAPI().askDownloadAllDocuments();
 }
 
 
