@@ -1,7 +1,7 @@
 
 function arenderjs_init(arenderjs_)
 { 
-      arenderjs_.loadDocument("http://192.168.0.175/downloa2d.jpeg",function(id)
+      arenderjs_.loadDocument("http://192.168.0.175/577b050f-53b3-4f89-854e-a15508852220.png",function(id)
 {
     arenderjs_.openDocument(id);
 })
