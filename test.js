@@ -1,6 +1,11 @@
 
 function arenderjs_init(arenderjs_)
 {
+      arenderjs_.loadDocument("http://192.168.0.175/9773665b-2106-4687-b97d-f74025fa625a.pdf",function(id)
+{
+    arenderjs_.openDocument(id);
+})
+
      console.log(arenderjs_);
      arenderjs_.registerAnnotationsSavedEvent(function(obj){armt_onSubmitAlterDocumentContentEvent(arenderjs_,obj);});
 
